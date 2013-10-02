@@ -13,6 +13,7 @@ app.configure(function(){
 var port = process.env.PORT || 5000;
 
 app.listen(port, function() {
+	'use strict';
 	console.log('server started '+port);
 });
 
