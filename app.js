@@ -12,6 +12,7 @@ app.configure(function(){
 
 var port = process.env.PORT || 5000;
 
-app.listen(port);
+app.listen(port, function() {
+	console.log('server started '+port);
+});
 
-console.log('server started '+port);
