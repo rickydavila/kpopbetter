@@ -10,10 +10,7 @@ app.configure(function(){
   app.use(express.static(path.join(__dirname, 'dist')));
 });
 
-var port = process.env.PORT || 5000;
+var port = process.env.PORT || 8080;
 
-app.listen(port, function() {
-	'use strict';
-	console.log('server started '+port);
-});
+app.listen(port);
 
